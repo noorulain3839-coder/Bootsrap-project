@@ -1,140 +1,51 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
-body{
-  height:90vh;
-  width: 100%;
+
+body {
+  padding-top: 0;
+}
+
+/* Hero Section Background */
+#Home {
   background-image: url("../media/double-cheeseburger-burger-isolated-black-background-fast-food-advertising-banner-with-copy-space_742418-17117.avif");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-}
-  
-
-/* Nav bar */
-.navbar-gradient {
-  background: linear-gradient(135deg, black, rgb(24, 180, 24));
-}
-.nav-spacing {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.navbar .nav-link {
-  font-weight: bolder;
-  font-size: 1.3rem;
-  color: white;
-  transition: all 0.2s ease-in-out;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.navbar .nav-link:hover {
-  color: black;
-  text-decoration: underline;
-}
-.gradient-text1 {
-  background: linear-gradient(135deg, yellow,green);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bolder;
-  font-size: 1.4rem;
-}
-/* Hero Section */
-.hero-section {
-  height:auto;
-  width: 100%;
-}
-/* left content */
-.w-60 {
-  width: 59%;
-  margin-top: 4rem;
-  padding-right: 3rem;
-  margin-bottom: 3rem;
-}
-.display-4{
-  /* color: green; */
-   background: linear-gradient(135deg, yellow,green);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.delivery{
-   background: linear-gradient(135deg, yellow,green);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 4rem;
-}
-.paragraph {
-  color: white;
-  font-size: 1.5rem;
-  text-align: justify;
+#Home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-.order-btn {
-  background-color: rgba(255, 255, 0, 0.781);
-  color: black;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
+#Home .container {
+  position: relative;
+  z-index: 2;
 }
 
-.order-btn:hover {
-  background-color:yellow; 
-  color:black;
-} 
-/*  MENU SECTION */
-#menu{
-   height:auto;
-  width: 100%;
-  margin-top: 5rem;
-  padding-bottom: 2rem;
-  padding-top:1rem; 
-  margin-bottom: 0;
-}
+/* Card animations */
 .card {
-  height: 50vh;
-  width: 70%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 1px 4px green;
-  border: none;
-  background-color: #fff;
-  
+  transition: transform 0.3s ease;
 }
-.card-body{
-  color: black;
-  
-}
+
 .card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 12px 24px GREEN;
+  transform: translateY(-5px);
 }
 
-.menu-img {
-  width: 100%;
-  height:35vh;
-} 
-/* About us */
-#aboutus{
-  height:100vh;
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 2rem;
-  margin-top: 1rem;
-
-} 
-.paragraph2{
-  padding-bottom:5rem;
-  
+/* Footer hover effects */
+footer a:hover {
+  color: #ffc107 !important;
 }
 
-.chef-img{
-  height: 60vh;
-  width: 100%;
-  background-image:url("../media/chef-cooking-kitchen-while-wearing-professional-attire.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 1rem;
+footer .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
